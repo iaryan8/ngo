@@ -1,0 +1,202 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "HopeConnect",
+      "archetype": "Organic & Earthy",
+      "tone": "Trustworthy, Transparent, Impactful, Human",
+      "theme_strategy": "Light Mode Dominant (Trust/Transparency) with Dark Mode support"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Merriweather, serif",
+        "body": "Inter, sans-serif",
+        "accent": "DM Sans, sans-serif"
+      },
+      "usage": {
+        "h1": "text-5xl md:text-6xl font-bold tracking-tight text-primary font-heading",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight text-foreground font-heading",
+        "h3": "text-2xl font-medium text-foreground font-heading",
+        "body": "text-base leading-relaxed text-muted-foreground font-body",
+        "caption": "text-sm font-medium tracking-wide uppercase text-muted-foreground/80 font-accent"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "name": "Deep Forest",
+          "hsl": "150 40% 20%",
+          "hex": "#1e4733",
+          "usage": "Primary buttons, active states, key headings"
+        },
+        "secondary": {
+          "name": "Terracotta Clay",
+          "hsl": "25 60% 55%",
+          "hex": "#cd7f47",
+          "usage": "Call to actions, highlights, donation buttons"
+        },
+        "accent": {
+          "name": "Pale Sage",
+          "hsl": "140 30% 92%",
+          "hex": "#eef5f0",
+          "usage": "Backgrounds, subtle highlights"
+        },
+        "background": {
+          "light": "40 20% 98%",
+          "dark": "150 20% 5%"
+        },
+        "muted": {
+          "light": "40 10% 94%",
+          "dark": "150 10% 10%"
+        }
+      },
+      "css_variables": {
+        "root": {
+          "--background": "40 20% 98%",
+          "--foreground": "150 40% 10%",
+          "--card": "0 0% 100%",
+          "--card-foreground": "150 40% 10%",
+          "--popover": "0 0% 100%",
+          "--popover-foreground": "150 40% 10%",
+          "--primary": "150 40% 20%",
+          "--primary-foreground": "0 0% 98%",
+          "--secondary": "25 60% 55%",
+          "--secondary-foreground": "0 0% 98%",
+          "--muted": "40 10% 94%",
+          "--muted-foreground": "150 10% 40%",
+          "--accent": "140 30% 92%",
+          "--accent-foreground": "150 40% 20%",
+          "--destructive": "0 84.2% 60.2%",
+          "--destructive-foreground": "0 0% 98%",
+          "--border": "150 10% 90%",
+          "--input": "150 10% 90%",
+          "--ring": "150 40% 20%",
+          "--radius": "0.75rem"
+        },
+        "dark": {
+          "--background": "150 20% 5%",
+          "--foreground": "40 20% 98%",
+          "--card": "150 20% 8%",
+          "--card-foreground": "40 20% 98%",
+          "--popover": "150 20% 8%",
+          "--popover-foreground": "40 20% 98%",
+          "--primary": "150 40% 40%",
+          "--primary-foreground": "150 20% 5%",
+          "--secondary": "25 60% 60%",
+          "--secondary-foreground": "150 20% 5%",
+          "--muted": "150 20% 15%",
+          "--muted-foreground": "150 10% 60%",
+          "--accent": "150 20% 15%",
+          "--accent-foreground": "40 20% 98%",
+          "--destructive": "0 62.8% 30.6%",
+          "--destructive-foreground": "0 0% 98%",
+          "--border": "150 20% 20%",
+          "--input": "150 20% 20%",
+          "--ring": "150 40% 40%"
+        }
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": {
+        "usage": "Sticky headers, toast notifications, overlay cards",
+        "classes": "bg-white/70 dark:bg-black/60 backdrop-blur-xl border border-white/20 shadow-sm"
+      },
+      "gradients": {
+        "usage": "Subtle background meshes, never for text",
+        "style": "Radial gradient from top-left (Pale Sage) to bottom-right (Warm Sand)"
+      },
+      "borders": {
+        "usage": "Soft, organic borders",
+        "radius": "rounded-xl or rounded-2xl for cards, rounded-full for buttons"
+      },
+      "shadows": {
+        "card": "shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300",
+        "button": "shadow-sm hover:shadow-md"
+      }
+    },
+    "layout_strategies": {
+      "landing_page": {
+        "grid": "Bento Grid (Mode A)",
+        "spacing": "Generous (py-20, gap-8)",
+        "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+      },
+      "dashboard": {
+        "grid": "High Density Grid (Mode B)",
+        "spacing": "Compact (p-6, gap-4)",
+        "structure": "Sidebar navigation + Main Content Area"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "rounded-full px-8 py-6 text-lg font-medium shadow-lg hover:-translate-y-0.5 transition-transform",
+        "secondary": "rounded-full px-6 py-4 bg-accent text-accent-foreground hover:bg-accent/80"
+      },
+      "cards": {
+        "style": "bg-card border-border/50 shadow-card rounded-2xl overflow-hidden",
+        "hover": "hover:border-primary/20"
+      },
+      "inputs": {
+        "style": "h-12 rounded-lg border-input bg-background/50 focus:ring-2 focus:ring-primary/20 transition-all"
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_bg": {
+          "url": "https://images.unsplash.com/photo-1544772711-57da9c7368fa",
+          "alt": "Woman teaching children in a rural classroom",
+          "usage": "Hero section background or main visual"
+        },
+        "impact_food": {
+          "url": "https://images.unsplash.com/photo-1710092784814-4a6f158913b8",
+          "alt": "Volunteers distributing food",
+          "usage": "Impact section or 'Food Security' cause"
+        },
+        "impact_health": {
+          "url": "https://images.unsplash.com/photo-1667577334865-732daf6963dc",
+          "alt": "Senior farmer at health camp",
+          "usage": "Health cause or 'Medical Aid' section"
+        },
+        "volunteers": {
+          "url": "https://images.unsplash.com/photo-1560220604-1985ebfe28b1",
+          "alt": "Group of volunteers in yellow shirts",
+          "usage": "Join Us section or 'Our Team'"
+        },
+        "joy": {
+          "url": "https://images.unsplash.com/photo-1742860870776-691897ca2284",
+          "alt": "Children playing under parachute",
+          "usage": "Success stories or footer background"
+        }
+      },
+      "icons": {
+        "library": "lucide-react",
+        "style": "Stroke width 1.5px, rounded line caps"
+      }
+    },
+    "accessibility": {
+      "contrast": "Ensure 4.5:1 for normal text. Use 'text-foreground' on 'bg-background'.",
+      "focus": "Visible focus rings on all interactive elements (ring-2 ring-primary/50).",
+      "aria": "Use aria-label for icon-only buttons."
+    },
+    "motion": {
+      "reduced_motion": "Respect prefers-reduced-motion media query.",
+      "transitions": "transition-all duration-300 ease-out",
+      "hover": "Subtle lift (-translate-y-1) for cards, color shift for buttons."
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. UPDATE /app/frontend/src/index.css with the CSS variables provided in 'colors.css_variables'.",
+    "2. INSTALL 'lucide-react' if not present.",
+    "3. CONFIGURE Tailwind to use the new font families (Merriweather, Inter).",
+    "4. IMPLEMENT the Landing Page using the 'Bento Grid' layout strategy.",
+    "5. BUILD the Dashboard using the 'High Density' grid strategy with Sidebar.",
+    "6. CUSTOMIZE Shadcn components (Button, Card, Input) to match the 'rounded-full' and 'rounded-2xl' styles.",
+    "7. USE the provided image URLs for their respective sections.",
+    "8. ENSURE all interactive elements have 'data-testid' attributes."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts.",
+    "Use 2-3x more spacing than typical designs (p-8, p-12).",
+    "Add micro-interactions to every button and card.",
+    "Use 'sonner' for toast notifications.",
+    "Never use pure black (#000000) or pure white (#ffffff) - use the tinted variables."
+  ]
+}
